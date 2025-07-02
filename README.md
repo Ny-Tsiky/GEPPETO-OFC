@@ -1,5 +1,7 @@
 # GEPPETO-OFC
-GEPPETO-OFC is a speech motor control model that simulates the biomechanics of tongue motion during speech production. It uses an Optimal Feedback Control strategy to control a reduced biomechanical model of the tongue, implemented in MATLAB.
+GEPPETO-OFC is a speech motor control model that simulates the biomechanics of tongue motion during speech production. It uses an Optimal Feedback Control strategy to control a reduced biomechanical model of the tongue, implemented as a compiled MEX function in MATLAB.
+
+This repository includes a simulation script for producing the vowel-consonant-vowel sequence: /ə/ – /t/ – /e/.
 
 ## Requirements
 At this stage, GEPPETO-OFC has specific platform and software dependencies:
@@ -30,8 +32,6 @@ Signal Processing Toolbox
 
 Statistics and Machine Learning Toolbox
 
-Image Processing Toolbox
-
 ### External Dependencies
 A working C# compiler is required.
 
@@ -60,7 +60,7 @@ run_main_simulation.m
 ```
 
 ## Notes
-This is an early version of the code intended for researchers or developers familiar with MATLAB.
+This is an early version of the code.
 
 Compatibility with other platforms (macOS Intel, Windows, Linux) is planned and will require different compilation instructions.
 
