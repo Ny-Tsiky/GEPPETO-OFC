@@ -36,7 +36,7 @@ Statistics and Machine Learning Toolbox
 A working C# compiler is required.
 
 ## Installation
-### Clone this repository:
+1. Clone this repository:
 ```
 
 bash
@@ -46,13 +46,9 @@ cd geppeto-ofc
 
 ```
 
-### Open the project in MATLAB R2021a or newer on an Apple Silicon Mac.
+2. Open the project in MATLAB.
 
-### Make sure all required toolboxes are installed (see list above).
-
-### Ensure your system has a working C# compiler.
-
-### Run the main simulation script:
+3. Run the main simulation script:
 ```
 matlab
 
