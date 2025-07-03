@@ -38,9 +38,13 @@ cd geppeto-ofc
 ```
 
 2. Launch MATLAB and open the project.
-3. Add the folder '.../GEPPETO_OFC/Optimfuns' to your MATLAB path.
-4. In MATLAB, open the file mex_lstm.m.
-5. Locate line 5, which starts with " HOME = ' ". Update this line by setting the correct path to your GEPPETO_OFC project directory.
+   
+3. Add the folder ``` .../GEPPETO_OFC/Optimfuns ``` to your MATLAB path.
+ 
+4. In MATLAB, open the file ``` mex_lstm.m``` .
+ 
+5. Locate line 5, which starts with ``` HOME = ' ``` . Update this line by setting the correct path to your GEPPETO_OFC project directory.
+ 
 6. Build Mex functions:
 ```
 matlab
