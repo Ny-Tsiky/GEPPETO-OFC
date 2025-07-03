@@ -7,10 +7,7 @@ This repository includes a simulation script for producing the vowel-consonant-v
 At this stage, GEPPETO-OFC has specific platform and software dependencies:
 
 ### Platform
-✅ Supported: macOS on Apple Silicon (M1, M2, M3 chips)
-
-❌ Not yet supported: macOS on Intel, Windows, Linux
-(Instructions for these platforms will be provided in future updates.)
+Supported: macOS on Apple Silicon (M1, M2, M3 chips)
 
 ### MATLAB Version
 MATLAB R2021a or later is required.
