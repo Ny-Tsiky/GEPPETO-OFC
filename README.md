@@ -43,7 +43,7 @@ cd geppeto-ofc
  
 4. In MATLAB, open the file ``` mex_lstm.m``` .
  
-5. Locate line 5, which starts with ``` HOME = ' ``` . Update this line by setting the correct path to your GEPPETO_OFC project directory.
+5. Locate line 5, which starts with ``` HOME =  ``` . Update this line by setting the correct path to your GEPPETO_OFC project directory.
  
 6. Build Mex functions:
 ```
