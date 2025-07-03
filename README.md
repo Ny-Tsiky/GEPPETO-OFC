@@ -45,11 +45,25 @@ cd geppeto-ofc
 
 2. Open the project in MATLAB.
 
-3. Run the main simulation script:
+3. Build Mex functions:
+```
+matlab
+
+mex_lstm.m
+```
+
+4. Run the main simulation script:
 ```
 matlab
 
 run_main_simulation.m
+```
+
+5. Visualize the results:
+```
+matlab
+
+generate_plot.m
 ```
 
 ## Notes
