@@ -19,13 +19,7 @@ Curve Fitting Toolbox
 
 Deep Learning Toolbox
 
-MATLAB Coder
-
 Optimization Toolbox
-
-Parallel Computing Toolbox
-
-Signal Processing Toolbox
 
 Statistics and Machine Learning Toolbox
 
