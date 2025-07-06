@@ -27,15 +27,14 @@ Statistics and Machine Learning Toolbox
 A working C# compiler is required.
 
 ## Installation
-1. Clone this repository:
-```
+This project includes a large file that cannot be stored directly on GitHub due to size restrictions.
 
-bash
-
-git clone https://github.com/yourusername/geppeto-ofc.git
-cd geppeto-ofc
+1. You can download the file from the following link:
 
 ```
+[Download Large File (1.53GB)](https://drive.google.com/file/d/1brTyKNYqUWi626mFOmvS5kZstuKx-cbX/view?usp=sharing)
+```
+2. UnZip.
 
 2. Launch MATLAB and open the project.
    
