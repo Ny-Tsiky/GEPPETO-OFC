@@ -1,0 +1,104 @@
+LIBTARGET = nrd
+LIBEXT = lib #a #a64
+LIBTGT = $(LIBTARGET).$(LIBEXT)
+HOME=D:\these\Traj_Optimization\Traj_Optimization
+# HOME=/users/pierre/Documents
+#HOME=d:
+#HOME=z:\pierre\Documents
+
+#ifeq ($(LIBEXT),a64) 
+ARCH=x86_64
+#else
+#ARCH=i386
+#endif
+
+INCLUDEPATH=$(HOME)\Includes\nrd #"C:\Program Files\MATLAB\R2018b\sys\lcc64\lcc64\include64"
+LIBPATH=$(HOME)\Libs
+LIBOBJS=\
+MNBRAK.obj  chint.obj    expdev.obj  icrc.obj	  mprove.obj  ranpt.obj    sor.obj\
+addint.obj  chixy.obj    expint.obj  icrc1.obj	  mpsqrt.obj  ratint.obj   sort.obj\
+airy.obj    choldc.obj   f1dim.obj   igray.obj	  mrqcof.obj  ratlsq.obj   sort2.obj\
+amebsa.obj  cholsl.obj   factln.obj  iindexx.obj  mrqmin.obj  ratval.obj   sort3.obj\
+amoeba.obj  chsone.obj   factrl.obj  indexx.obj   newt.obj    rc.obj       spctrm.obj\
+amotry.obj  chstwo.obj   fasper.obj  interp.obj   nrutil.obj  rd.obj       spear.obj\
+amotsa.obj  cisi.obj     fdjac.obj   irbit1.obj   odeint.obj  realft.obj   sphbes.obj\
+anneal.obj  cntab1.obj   fgauss.obj  irbit2.obj   orthog.obj  rebin.obj    splie2.obj\
+anorm2.obj  cntab2.obj   fill0.obj   jacobi.obj   pade.obj    red.obj      splin2.obj\
+arcmak.obj  complex.obj  fit.obj     jacobn.obj   pccheb.obj  relax.obj    spline.obj\
+arcode.obj  convlv.obj   fitexy.obj  julday.obj   pcshft.obj  relax2.obj   splint.obj\
+arcsum.obj  copy.obj     fixrts.obj  kendl1.obj   pearsn.obj  resid.obj    spread.obj\
+asolve.obj  correl.obj   fleg.obj    kendl2.obj   period.obj  revcst.obj   sprsax.obj\
+atimes.obj  cosft1.obj   flmoon.obj  kermom.obj   piksr2.obj  reverse.obj  sprsin.obj\
+avevar.obj  cosft2.obj   fmin.obj    ks2d1s.obj   piksrt.obj  rf.obj       sprspm.obj\
+balanc.obj  covsrt.obj   four1.obj   ks2d2s.obj   pinvs.obj   rj.obj       sprstm.obj\
+banbks.obj  crank.obj    fourew.obj  ksone.obj	  plgndr.obj  rk4.obj      sprstp.obj\
+bandec.obj  cyclic.obj   fourfs.obj  kstwo.obj	  poidev.obj  rkck.obj     sprstx.obj\
+banmul.obj  daub4.obj    fourn.obj   laguer.obj   polcoe.obj  rkdumb.obj   stifbs.obj\
+bcucof.obj  dawson.obj   fpoly.obj   lfit.obj	  polcof.obj  rkqs.obj     stiff.obj\
+bcuint.obj  dbrent.obj   fred2.obj   linbcg.obj   poldiv.obj  rlft3.obj    stoerm.obj\
+beschb.obj  ddpoly.obj   fredin.obj  linmin.obj   polin2.obj  rofunc.obj   svbksb.obj\
+bessi.obj   decchk.obj   frenel.obj  lnsrch.obj   polint.obj  rotate.obj   svdcmp.obj\
+bessi0.obj  df1dim.obj   frprmn.obj  locate.obj   powell.obj  rsolv.obj    svdfit.obj\
+bessi1.obj  dfour1.obj   ftest.obj   lop.obj	  predic.obj  rstrct.obj   svdvar.obj\
+bessik.obj  dfpmin.obj   gamdev.obj  lubksb.obj   probks.obj  rtbis.obj    toeplz.obj\
+bessj.obj   dfridr.obj   gammln.obj  ludcmp.obj   psdes.obj   rtflsp.obj   tptest.obj\
+bessj0.obj  dftcor.obj   gammp.obj   machar.obj   pwt.obj     rtnewt.obj   tqli.obj\
+bessj1.obj  dftint.obj   gammq.obj   matadd.obj   pwtset.obj  rtsafe.obj   trapzd.obj\
+bessjy.obj  difeq.obj    gasdev.obj  matsub.obj   pythag.obj  rtsec.obj    tred2.obj\
+bessk.obj   dlinmin.obj  gaucof.obj  medfit.obj   pzextr.obj  rzextr.obj   tridag.obj\
+bessk0.obj  dpythag.obj  gauher.obj  memcof.obj   qgaus.obj   savgol.obj   trncst.obj\
+bessk1.obj  drealft.obj  gaujac.obj  metrop.obj   qrdcmp.obj  scrsho.obj   trnspt.obj\
+bessy.obj   dsprsax.obj  gaulag.obj  mgfas.obj	  qromb.obj   select.obj   ttest.obj\
+bessy0.obj  dsprstx.obj  gauleg.obj  mglin.obj	  qromo.obj   selip.obj    tutest.obj\
+bessy1.obj  dsvbksb.obj  gaussj.obj  midexp.obj   qroot.obj   shell.obj    twofft.obj\
+beta.obj    dsvdcmp.obj  gcf.obj     midinf.obj   qrsolv.obj  shoot.obj    vander.obj\
+betacf.obj  eclass.obj   golden.obj  midpnt.obj   qrupdt.obj  vegas.obj\
+betai.obj   eclazz.obj   gser.obj    midsql.obj   qsimp.obj   simp1.obj    voltra.obj\
+bico.obj    ei.obj	 hpsel.obj   midsqu.obj   qtrap.obj   simp2.obj    wt1.obj\
+bksub.obj   eigsrt.obj   hpsort.obj  miser.obj	  quad3d.obj  simp3.obj    wtn.obj\
+bnldev.obj  elle.obj     hqr.obj     mmid.obj	  quadct.obj  simplx.obj   wwghts.obj\
+brent.obj   ellf.obj     hufapp.obj  mnewt.obj	  quadmx.obj  simpr.obj    zbrac.obj\
+broydn.obj  ellpi.obj    hufdec.obj  moment.obj   quadvl.obj  sinft.obj    zbrak.obj\
+bsstep.obj  elmhes.obj   hufenc.obj  mp2dfr.obj   ran0.obj    slvsm2.obj   zbrent.obj\
+caldat.obj  erfcc.obj    hufmak.obj  mpdiv.obj	  ran1.obj    slvsml.obj   zrhqr.obj\
+chder.obj   erff.obj     hunt.obj    mpinv.obj	  ran2.obj    sncndn.obj   zriddr.obj\
+chebev.obj  erffc.obj    hypdrv.obj  mpmul.obj	  ran3.obj    snrm.obj     zroots.obj\
+chebft.obj  eulsum.obj   hypgeo.obj  mpops.obj	  ran4.obj    sobseq.obj\
+chebpc.obj  evlmem.obj   hypser.obj  mppi.obj	  rank.obj    solvde.obj\
+myodeint.obj myrkqs.obj  dodeint.obj drkck.obj    drkqs.obj
+# PB 03/Oct/2003   Removed because of compilation problems:
+#shootf.obj 
+
+#CC=C:\MinGW\bin\mingw32-g++ #
+#CC="c:\Program Files\MATLAB\R2018b\sys\lcc64\lcc64\bin\lcc64.exe"
+#CC=C:\"Program Files"\CodeBlocks\MinGW\bin\g++
+CC=gcc
+
+
+CFLAGS= -I$(INCLUDEPATH) -Iquote -O2 #-march= $(ARCH)
+DEBUGFLAGS= -I$(INCLUDEPATH) -Iquote -g
+
+.c.obj: 	
+	$(CC) $(CFLAGS) -c $@.c
+#	$(CC) $(CFLAGS) -c -Fo$@ $<
+
+%.obj: %.cpp
+	$(CC) $(CFLAGS) -c $*.cpp
+#	$(CC)  -c $*.cpp
+#	$(CC) $(CFLAGS) -c -Fo$@ $<
+
+#.cpp.obj: 
+#	$(CC) $(CFLAGS) -c $<
+# #	$(CC) $(CFLAGS) -c -Fo$@ $<
+
+
+
+$(LIBTGT): $(LIBOBJS)
+#	ar ru $@ $^
+#	mv $@ $(LIBPATH)
+
+	lib /out:$(LIBTGT) $(LIBOBJS)
+#	lcclib64 /out:$(LIBTGT) $(LIBOBJS)
+	copy $(LIBTGT) $(LIBPATH)
+
+

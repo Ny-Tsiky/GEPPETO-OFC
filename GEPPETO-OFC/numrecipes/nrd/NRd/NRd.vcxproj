@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{83d3f953-2558-49ef-97f9-2004e2734dbe}</ProjectGuid>
+    <RootNamespace>NRd</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\addint.cpp" />
+    <ClCompile Include="..\airy.cpp" />
+    <ClCompile Include="..\amebsa.cpp" />
+    <ClCompile Include="..\amoeba.cpp" />
+    <ClCompile Include="..\amotry.cpp" />
+    <ClCompile Include="..\amotsa.cpp" />
+    <ClCompile Include="..\anneal.cpp" />
+    <ClCompile Include="..\anorm2.cpp" />
+    <ClCompile Include="..\arcmak.cpp" />
+    <ClCompile Include="..\arcode.cpp" />
+    <ClCompile Include="..\arcsum.cpp" />
+    <ClCompile Include="..\asolve.cpp" />
+    <ClCompile Include="..\atimes.cpp" />
+    <ClCompile Include="..\avevar.cpp" />
+    <ClCompile Include="..\balanc.cpp" />
+    <ClCompile Include="..\banbks.cpp" />
+    <ClCompile Include="..\bandec.cpp" />
+    <ClCompile Include="..\banmul.cpp" />
+    <ClCompile Include="..\bcucof.cpp" />
+    <ClCompile Include="..\bcuint.cpp" />
+    <ClCompile Include="..\beschb.cpp" />
+    <ClCompile Include="..\bessi.cpp" />
+    <ClCompile Include="..\bessi0.cpp" />
+    <ClCompile Include="..\bessi1.cpp" />
+    <ClCompile Include="..\bessik.cpp" />
+    <ClCompile Include="..\bessj.cpp" />
+    <ClCompile Include="..\bessj0.cpp" />
+    <ClCompile Include="..\bessj1.cpp" />
+    <ClCompile Include="..\bessjy.cpp" />
+    <ClCompile Include="..\bessk.cpp" />
+    <ClCompile Include="..\bessk0.cpp" />
+    <ClCompile Include="..\bessk1.cpp" />
+    <ClCompile Include="..\bessy.cpp" />
+    <ClCompile Include="..\bessy0.cpp" />
+    <ClCompile Include="..\bessy1.cpp" />
+    <ClCompile Include="..\beta.cpp" />
+    <ClCompile Include="..\betacf.cpp" />
+    <ClCompile Include="..\betai.cpp" />
+    <ClCompile Include="..\bico.cpp" />
+    <ClCompile Include="..\bksub.cpp" />
+    <ClCompile Include="..\bnldev.cpp" />
+    <ClCompile Include="..\brent.cpp" />
+    <ClCompile Include="..\broydn.cpp" />
+    <ClCompile Include="..\bsstep.cpp" />
+    <ClCompile Include="..\caldat.cpp" />
+    <ClCompile Include="..\chder.cpp" />
+    <ClCompile Include="..\chebev.cpp" />
+    <ClCompile Include="..\chebft.cpp" />
+    <ClCompile Include="..\chebpc.cpp" />
+    <ClCompile Include="..\chint.cpp" />
+    <ClCompile Include="..\chixy.cpp" />
+    <ClCompile Include="..\choldc.cpp" />
+    <ClCompile Include="..\cholsl.cpp" />
+    <ClCompile Include="..\chsone.cpp" />
+    <ClCompile Include="..\chstwo.cpp" />
+    <ClCompile Include="..\cisi.cpp" />
+    <ClCompile Include="..\cntab1.cpp" />
+    <ClCompile Include="..\cntab2.cpp" />
+    <ClCompile Include="..\complex.cpp" />
+    <ClCompile Include="..\convlv.cpp" />
+    <ClCompile Include="..\copy.cpp" />
+    <ClCompile Include="..\correl.cpp" />
+    <ClCompile Include="..\cosft1.cpp" />
+    <ClCompile Include="..\cosft2.cpp" />
+    <ClCompile Include="..\covsrt.cpp" />
+    <ClCompile Include="..\crank.cpp" />
+    <ClCompile Include="..\cyclic.cpp" />
+    <ClCompile Include="..\daub4.cpp" />
+    <ClCompile Include="..\dawson.cpp" />
+    <ClCompile Include="..\dbrent.cpp" />
+    <ClCompile Include="..\ddpoly.cpp" />
+    <ClCompile Include="..\decchk.cpp" />
+    <ClCompile Include="..\df1dim.cpp" />
+    <ClCompile Include="..\dfour1.cpp" />
+    <ClCompile Include="..\dfpmin.cpp" />
+    <ClCompile Include="..\dfridr.cpp" />
+    <ClCompile Include="..\dftcor.cpp" />
+    <ClCompile Include="..\dftint.cpp" />
+    <ClCompile Include="..\difeq.cpp" />
+    <ClCompile Include="..\dlinmin.cpp" />
+    <ClCompile Include="..\dodeint.cpp" />
+    <ClCompile Include="..\dpythag.cpp" />
+    <ClCompile Include="..\drealft.cpp" />
+    <ClCompile Include="..\drkck.cpp" />
+    <ClCompile Include="..\drkqs.cpp" />
+    <ClCompile Include="..\dsprsax.cpp" />
+    <ClCompile Include="..\dsprstx.cpp" />
+    <ClCompile Include="..\dsvbksb.cpp" />
+    <ClCompile Include="..\dsvdcmp.cpp" />
+    <ClCompile Include="..\eclass.cpp" />
+    <ClCompile Include="..\eclazz.cpp" />
+    <ClCompile Include="..\ei.cpp" />
+    <ClCompile Include="..\eigsrt.cpp" />
+    <ClCompile Include="..\elle.cpp" />
+    <ClCompile Include="..\ellf.cpp" />
+    <ClCompile Include="..\ellpi.cpp" />
+    <ClCompile Include="..\elmhes.cpp" />
+    <ClCompile Include="..\erfcc.cpp" />
+    <ClCompile Include="..\erff.cpp" />
+    <ClCompile Include="..\erffc.cpp" />
+    <ClCompile Include="..\eulsum.cpp" />
+    <ClCompile Include="..\evlmem.cpp" />
+    <ClCompile Include="..\expdev.cpp" />
+    <ClCompile Include="..\expint.cpp" />
+    <ClCompile Include="..\f1dim.cpp" />
+    <ClCompile Include="..\factln.cpp" />
+    <ClCompile Include="..\factrl.cpp" />
+    <ClCompile Include="..\fasper.cpp" />
+    <ClCompile Include="..\fdjac.cpp" />
+    <ClCompile Include="..\fgauss.cpp" />
+    <ClCompile Include="..\fill0.cpp" />
+    <ClCompile Include="..\fit.cpp" />
+    <ClCompile Include="..\fitexy.cpp" />
+    <ClCompile Include="..\fixrts.cpp" />
+    <ClCompile Include="..\fleg.cpp" />
+    <ClCompile Include="..\flmoon.cpp" />
+    <ClCompile Include="..\fmin.cpp" />
+    <ClCompile Include="..\four1.cpp" />
+    <ClCompile Include="..\fourew.cpp" />
+    <ClCompile Include="..\fourfs.cpp" />
+    <ClCompile Include="..\fourn.cpp" />
+    <ClCompile Include="..\fpoly.cpp" />
+    <ClCompile Include="..\fred2.cpp" />
+    <ClCompile Include="..\fredin.cpp" />
+    <ClCompile Include="..\frenel.cpp" />
+    <ClCompile Include="..\frprmn.cpp" />
+    <ClCompile Include="..\ftest.cpp" />
+    <ClCompile Include="..\gamdev.cpp" />
+    <ClCompile Include="..\gammln.cpp" />
+    <ClCompile Include="..\gammp.cpp" />
+    <ClCompile Include="..\gammq.cpp" />
+    <ClCompile Include="..\gasdev.cpp" />
+    <ClCompile Include="..\gaucof.cpp" />
+    <ClCompile Include="..\gauher.cpp" />
+    <ClCompile Include="..\gaujac.cpp" />
+    <ClCompile Include="..\gaulag.cpp" />
+    <ClCompile Include="..\gauleg.cpp" />
+    <ClCompile Include="..\gaussj.cpp" />
+    <ClCompile Include="..\gcf.cpp" />
+    <ClCompile Include="..\golden.cpp" />
+    <ClCompile Include="..\gser.cpp" />
+    <ClCompile Include="..\hpsel.cpp" />
+    <ClCompile Include="..\hpsort.cpp" />
+    <ClCompile Include="..\hqr.cpp" />
+    <ClCompile Include="..\hufapp.cpp" />
+    <ClCompile Include="..\hufdec.cpp" />
+    <ClCompile Include="..\hufenc.cpp" />
+    <ClCompile Include="..\hufmak.cpp" />
+    <ClCompile Include="..\hunt.cpp" />
+    <ClCompile Include="..\hypdrv.cpp" />
+    <ClCompile Include="..\hypgeo.cpp" />
+    <ClCompile Include="..\hypser.cpp" />
+    <ClCompile Include="..\icrc.cpp" />
+    <ClCompile Include="..\icrc1.cpp" />
+    <ClCompile Include="..\igray.cpp" />
+    <ClCompile Include="..\iindexx.cpp" />
+    <ClCompile Include="..\indexx.cpp" />
+    <ClCompile Include="..\interp.cpp" />
+    <ClCompile Include="..\irbit1.cpp" />
+    <ClCompile Include="..\irbit2.cpp" />
+    <ClCompile Include="..\jacobi.cpp" />
+    <ClCompile Include="..\jacobn.cpp" />
+    <ClCompile Include="..\julday.cpp" />
+    <ClCompile Include="..\kendl1.cpp" />
+    <ClCompile Include="..\kendl2.cpp" />
+    <ClCompile Include="..\kermom.cpp" />
+    <ClCompile Include="..\ks2d1s.cpp" />
+    <ClCompile Include="..\ks2d2s.cpp" />
+    <ClCompile Include="..\ksone.cpp" />
+    <ClCompile Include="..\kstwo.cpp" />
+    <ClCompile Include="..\laguer.cpp" />
+    <ClCompile Include="..\lfit.cpp" />
+    <ClCompile Include="..\linbcg.cpp" />
+    <ClCompile Include="..\linmin.cpp" />
+    <ClCompile Include="..\lnsrch.cpp" />
+    <ClCompile Include="..\locate.cpp" />
+    <ClCompile Include="..\lop.cpp" />
+    <ClCompile Include="..\lubksb.cpp" />
+    <ClCompile Include="..\ludcmp.cpp" />
+    <ClCompile Include="..\machar.cpp" />
+    <ClCompile Include="..\matadd.cpp" />
+    <ClCompile Include="..\matsub.cpp" />
+    <ClCompile Include="..\medfit.cpp" />
+    <ClCompile Include="..\memcof.cpp" />
+    <ClCompile Include="..\metrop.cpp" />
+    <ClCompile Include="..\mgfas.cpp" />
+    <ClCompile Include="..\mglin.cpp" />
+    <ClCompile Include="..\midexp.cpp" />
+    <ClCompile Include="..\midinf.cpp" />
+    <ClCompile Include="..\midpnt.cpp" />
+    <ClCompile Include="..\midsql.cpp" />
+    <ClCompile Include="..\midsqu.cpp" />
+    <ClCompile Include="..\miser.cpp" />
+    <ClCompile Include="..\mmid.cpp" />
+    <ClCompile Include="..\MNBRAK.cpp" />
+    <ClCompile Include="..\mnewt.cpp" />
+    <ClCompile Include="..\moment.cpp" />
+    <ClCompile Include="..\mp2dfr.cpp" />
+    <ClCompile Include="..\mpdiv.cpp" />
+    <ClCompile Include="..\mpinv.cpp" />
+    <ClCompile Include="..\mpmul.cpp" />
+    <ClCompile Include="..\mpops.cpp" />
+    <ClCompile Include="..\mppi.cpp" />
+    <ClCompile Include="..\mprove.cpp" />
+    <ClCompile Include="..\mpsqrt.cpp" />
+    <ClCompile Include="..\mrqcof.cpp" />
+    <ClCompile Include="..\mrqmin.cpp" />
+    <ClCompile Include="..\myodeint.cpp" />
+    <ClCompile Include="..\myrkqs.cpp" />
+    <ClCompile Include="..\newt.cpp" />
+    <ClCompile Include="..\nrutil.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Z:\Tsiky\Traj_Optimization\Includes\nrd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\odeint.cpp" />
+    <ClCompile Include="..\orthog.cpp" />
+    <ClCompile Include="..\pade.cpp" />
+    <ClCompile Include="..\pccheb.cpp" />
+    <ClCompile Include="..\pcshft.cpp" />
+    <ClCompile Include="..\pearsn.cpp" />
+    <ClCompile Include="..\period.cpp" />
+    <ClCompile Include="..\piksr2.cpp" />
+    <ClCompile Include="..\piksrt.cpp" />
+    <ClCompile Include="..\pinvs.cpp" />
+    <ClCompile Include="..\plgndr.cpp" />
+    <ClCompile Include="..\poidev.cpp" />
+    <ClCompile Include="..\polcoe.cpp" />
+    <ClCompile Include="..\polcof.cpp" />
+    <ClCompile Include="..\poldiv.cpp" />
+    <ClCompile Include="..\polin2.cpp" />
+    <ClCompile Include="..\polint.cpp" />
+    <ClCompile Include="..\powell.cpp" />
+    <ClCompile Include="..\predic.cpp" />
+    <ClCompile Include="..\probks.cpp" />
+    <ClCompile Include="..\psdes.cpp" />
+    <ClCompile Include="..\pwt.cpp" />
+    <ClCompile Include="..\pwtset.cpp" />
+    <ClCompile Include="..\pythag.cpp" />
+    <ClCompile Include="..\pzextr.cpp" />
+    <ClCompile Include="..\qgaus.cpp" />
+    <ClCompile Include="..\qrdcmp.cpp" />
+    <ClCompile Include="..\qromb.cpp" />
+    <ClCompile Include="..\qromo.cpp" />
+    <ClCompile Include="..\qroot.cpp" />
+    <ClCompile Include="..\qrsolv.cpp" />
+    <ClCompile Include="..\qrupdt.cpp" />
+    <ClCompile Include="..\qsimp.cpp" />
+    <ClCompile Include="..\qtrap.cpp" />
+    <ClCompile Include="..\quad3d.cpp" />
+    <ClCompile Include="..\quadct.cpp" />
+    <ClCompile Include="..\quadmx.cpp" />
+    <ClCompile Include="..\quadvl.cpp" />
+    <ClCompile Include="..\ran0.cpp" />
+    <ClCompile Include="..\ran1.cpp" />
+    <ClCompile Include="..\ran2.cpp" />
+    <ClCompile Include="..\ran3.cpp" />
+    <ClCompile Include="..\ran4.cpp" />
+    <ClCompile Include="..\rank.cpp" />
+    <ClCompile Include="..\ranpt.cpp" />
+    <ClCompile Include="..\ratint.cpp" />
+    <ClCompile Include="..\ratlsq.cpp" />
+    <ClCompile Include="..\ratval.cpp" />
+    <ClCompile Include="..\rc.cpp" />
+    <ClCompile Include="..\rd.cpp" />
+    <ClCompile Include="..\realft.cpp" />
+    <ClCompile Include="..\rebin.cpp" />
+    <ClCompile Include="..\red.cpp" />
+    <ClCompile Include="..\relax.cpp" />
+    <ClCompile Include="..\relax2.cpp" />
+    <ClCompile Include="..\resid.cpp" />
+    <ClCompile Include="..\revcst.cpp" />
+    <ClCompile Include="..\reverse.cpp" />
+    <ClCompile Include="..\rf.cpp" />
+    <ClCompile Include="..\rj.cpp" />
+    <ClCompile Include="..\rk4.cpp" />
+    <ClCompile Include="..\rkck.cpp" />
+    <ClCompile Include="..\rkdumb.cpp" />
+    <ClCompile Include="..\rkqs.cpp" />
+    <ClCompile Include="..\rlft3.cpp" />
+    <ClCompile Include="..\rofunc.cpp" />
+    <ClCompile Include="..\rotate.cpp" />
+    <ClCompile Include="..\rsolv.cpp" />
+    <ClCompile Include="..\rstrct.cpp" />
+    <ClCompile Include="..\rtbis.cpp" />
+    <ClCompile Include="..\rtflsp.cpp" />
+    <ClCompile Include="..\rtnewt.cpp" />
+    <ClCompile Include="..\rtsafe.cpp" />
+    <ClCompile Include="..\rtsec.cpp" />
+    <ClCompile Include="..\rzextr.cpp" />
+    <ClCompile Include="..\savgol.cpp" />
+    <ClCompile Include="..\scrsho.cpp" />
+    <ClCompile Include="..\select.cpp" />
+    <ClCompile Include="..\selip.cpp" />
+    <ClCompile Include="..\shell.cpp" />
+    <ClCompile Include="..\shoot.cpp" />
+    <ClCompile Include="..\shootf.cpp" />
+    <ClCompile Include="..\simp1.cpp" />
+    <ClCompile Include="..\simp2.cpp" />
+    <ClCompile Include="..\simp3.cpp" />
+    <ClCompile Include="..\simplx.cpp" />
+    <ClCompile Include="..\simpr.cpp" />
+    <ClCompile Include="..\sinft.cpp" />
+    <ClCompile Include="..\slvsm2.cpp" />
+    <ClCompile Include="..\slvsml.cpp" />
+    <ClCompile Include="..\sncndn.cpp" />
+    <ClCompile Include="..\snrm.cpp" />
+    <ClCompile Include="..\sobseq.cpp" />
+    <ClCompile Include="..\solvde.cpp" />
+    <ClCompile Include="..\sor.cpp" />
+    <ClCompile Include="..\sort.cpp" />
+    <ClCompile Include="..\sort2.cpp" />
+    <ClCompile Include="..\sort3.cpp" />
+    <ClCompile Include="..\spctrm.cpp" />
+    <ClCompile Include="..\spear.cpp" />
+    <ClCompile Include="..\sphbes.cpp" />
+    <ClCompile Include="..\splie2.cpp" />
+    <ClCompile Include="..\splin2.cpp" />
+    <ClCompile Include="..\spline.cpp" />
+    <ClCompile Include="..\splint.cpp" />
+    <ClCompile Include="..\spread.cpp" />
+    <ClCompile Include="..\sprsax.cpp" />
+    <ClCompile Include="..\sprsin.cpp" />
+    <ClCompile Include="..\sprspm.cpp" />
+    <ClCompile Include="..\sprstm.cpp" />
+    <ClCompile Include="..\sprstp.cpp" />
+    <ClCompile Include="..\sprstx.cpp" />
+    <ClCompile Include="..\stifbs.cpp" />
+    <ClCompile Include="..\stiff.cpp" />
+    <ClCompile Include="..\stoerm.cpp" />
+    <ClCompile Include="..\svbksb.cpp" />
+    <ClCompile Include="..\svdcmp.cpp" />
+    <ClCompile Include="..\svdfit.cpp" />
+    <ClCompile Include="..\svdvar.cpp" />
+    <ClCompile Include="..\toeplz.cpp" />
+    <ClCompile Include="..\tptest.cpp" />
+    <ClCompile Include="..\tqli.cpp" />
+    <ClCompile Include="..\trapzd.cpp" />
+    <ClCompile Include="..\tred2.cpp" />
+    <ClCompile Include="..\tridag.cpp" />
+    <ClCompile Include="..\trncst.cpp" />
+    <ClCompile Include="..\trnspt.cpp" />
+    <ClCompile Include="..\ttest.cpp" />
+    <ClCompile Include="..\tutest.cpp" />
+    <ClCompile Include="..\twofft.cpp" />
+    <ClCompile Include="..\vander.cpp" />
+    <ClCompile Include="..\vegas.cpp" />
+    <ClCompile Include="..\voltra.cpp" />
+    <ClCompile Include="..\wt1.cpp" />
+    <ClCompile Include="..\wtn.cpp" />
+    <ClCompile Include="..\wwghts.cpp" />
+    <ClCompile Include="..\zbrac.cpp" />
+    <ClCompile Include="..\zbrak.cpp" />
+    <ClCompile Include="..\zbrent.cpp" />
+    <ClCompile Include="..\zrhqr.cpp" />
+    <ClCompile Include="..\zriddr.cpp" />
+    <ClCompile Include="..\zroots.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

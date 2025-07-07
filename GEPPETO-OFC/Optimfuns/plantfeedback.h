@@ -1,0 +1,12 @@
+void init_feedback();
+void feedback(double *s, double *u, double *y);
+void feedback(double *s, double *u, double *y, double *vt_area);
+void feedback_kalman(double *s, double *u, double *y);
+void feedback_kalman(double *s, double *u, double *y, double *vt_area);
+void feedback(double *s, double *u, double t, double *y, double *vt_area);
+void feedbackAndGuess(double* s, double *u, double *y, double *formantsGuess, double *vt_area);
+void feedbackAndGuess(double* s, double *u, double *formantsGuess, double *y);
+void feedback_ds(double* s, double *u, double **Hs);
+void feedback_ds(double* s, double *u, double t, double **Hs);
+void feedback_dsAndGuess(double* s, double *Fguess, double *u, double **Hs);
+void free_feedback_variables();
