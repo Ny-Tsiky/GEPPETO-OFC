@@ -40,18 +40,7 @@ git clone https://github.com/Ny-Tsiky/GEPPETO-OFC.git
    
 3. Add the folder ``` .../GEPPETO_OFC/Optimfuns ``` to your MATLAB path.
  
-4. In MATLAB, open the file ``` mex_lstm.m``` .
- 
-5. Locate line 5, which starts with ``` HOME =  ``` . Update this line by setting the correct path to your GEPPETO_OFC project directory.
- 
-6. Build Mex functions:
-```
-matlab
-
-mex_lstm.m
-```
-
-7. Run the main simulation script:
+4. In MATLAB, run the main simulation script:
 ```
 matlab
 
@@ -62,7 +51,7 @@ run_main_simulation.m
 ```
 matlab
 
-generate_plot.m
+generate_plots.m
 ```
 
 ## Notes
