@@ -1,3 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(495,5): warning MSB8003: la propriété WindowsSDKDir n'est pas définie. Certains outils de build sont introuvables.
-  ConsoleApplication1.cpp
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\yvals.h(12,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'crtdbg.h' : No such file or directory
